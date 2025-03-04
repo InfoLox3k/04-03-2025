@@ -8,19 +8,34 @@ def main():
 
         if choice == '1':
             try:
-                result = expression()
+                result = sum_num()
                 Result(result)
             except:
                 BeNormal()
+        elif choice == '2':
+            try:
+                result = min_num()
+                Result(result)
+            except:
+                BeNormal()
+        elif choice == '3':
+            try:
+                result = mult_num()
+                Result(result)
+            except:
+                BeNormal()
+        elif choice == '4':
+            try:
+                result = div_num()
+                Result(result)
+            except:
+                BeNormal()
+
         elif choice == '0':
             Goodbye()
             break
         else:
             BeNormal()
-
-
-
-
 
 main()
 
