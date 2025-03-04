@@ -1,9 +1,24 @@
-from View import ZeroDivision
-
 # Model (Модель) - отвечает за данные и логику работы с ними
-books = ["Война и мир", "Гарри Поттер", "Мастер и Маргарита"]
+def sum_num():
+    summ = 0
+    for item in num_list:
+        summ += item
+    return summ
 
-def expression():
-    math_expression = eval(input('Введите выражение: '))
+def min_num():
+    minn = 0
+    for item in num_list:
+        minn -= item
+    return minn
 
-    return math_expression
+def mult_num():
+    multt = 0
+    for item in num_list:
+        multt *= item
+    return multt
+
+def div_num():
+    div = 0
+    for item in num_list:
+        div /= item
+    return div
