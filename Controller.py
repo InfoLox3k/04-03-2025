@@ -3,42 +3,37 @@ from View import *
 
 # Controller (Контроллер) - управляет логикой и связывает модель с представлением
 def main():
-    while True:
-        choice = display_menu()
+    choice = display_menu()
+    num_list = Num()
 
-        if choice == '1':
-            try:
-                result = sum_num()
-                Result(result)
-            except:
-                BeNormal()
-        elif choice == '2':
-            try:
-                result = min_num()
-                Result(result)
-            except:
-                BeNormal()
-        elif choice == '3':
-            try:
-                result = mult_num()
-                Result(result)
-            except:
-                BeNormal()
-        elif choice == '4':
-            try:
-                result = div_num()
-                Result(result)
-            except:
-                BeNormal()
-
-        elif choice == '0':
-            Goodbye()
-            break
-        else:
+    if choice == '1':
+        try:
+            result = sum_num(num_list)
+            Result(result)
+        except:
             BeNormal()
+    elif choice == '2':
+        try:
+            result = min_num(num_list)
+            Result(result)
+        except:
+            BeNormal()
+    elif choice == '3':
+        try:
+            result = mult_num(num_list)
+            Result(result)
+        except:
+            BeNormal()
+    elif choice == '4':
+        # try:
+            result = div_num(num_list)
+            Result(result)
+        # except:
+        #     BeNormal()
+
+    elif choice == '0':
+        Goodbye()
+    else:
+        BeNormal()
 
 main()
-
-# # Запуск программы
-# if __name__ == "__main__":
-#     main()
