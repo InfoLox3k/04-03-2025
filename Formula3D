@@ -1,0 +1,24 @@
+def cube_surface_area(a):
+    return 6 * (a ** 2)
+
+import math
+
+def sphere_surface_area(r):
+    return 4 * math.pi * (r ** 2)
+
+def box_surface_area(l, w, h):
+    return l * w * h
+
+def cylinder_surface_area(r, h):
+    return 2 * math.pi * r * (h + r)
+
+def cone_surface_area(r, l):
+    return math.pi * r * (r + l)
+
+def pyramid_surface_area(base_area, base_perimeter, slant_height):
+    # Площадь поверхности пирамиды
+    surface_area = base_area + 0.5 * base_perimeter * slant_height
+    return surface_area
+
+def prism_surface_area(A, P, h):
+    return 2 * A + P * h
