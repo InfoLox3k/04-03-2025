@@ -1,0 +1,29 @@
+import math
+
+def square_area(a):
+    """Вычисляет площадь квадрата."""
+    return a ** 2
+
+def rectangle_area(a, b):
+    """Вычисляет площадь прямоугольника."""
+    return a * b
+
+def triangle_area(base, height):
+    """Вычисляет площадь треугольника."""
+    return 0.5 * base * height
+
+def circle_area(r):
+    """Вычисляет площадь круга."""
+    return math.pi * r ** 2
+
+def parallelogram_area(base, height):
+    """Вычисляет площадь параллелограмма."""
+    return base * height
+
+def trapezoid_area(a, b, height):
+    """Вычисляет площадь трапеции."""
+    return (a + b) * height / 2
+
+def rhombus_area(d1, d2):
+    """Вычисляет площадь ромба."""
+    return (d1 * d2) / 2
